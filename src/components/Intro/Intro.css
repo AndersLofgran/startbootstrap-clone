@@ -1,0 +1,23 @@
+.Intro {
+  background-image: url(https://www.nordicstylemag.com/wp-content/uploads/2018/10/TID-Watches_Black-Edition.jpg);
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .IntroText > * {
+    margin: 10px;
+  }
+
+.WhiteText {
+  color: white;
+}
+
+.IntroButton {
+  background-color: rgb(254,209,54);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 25px 50px;
+}

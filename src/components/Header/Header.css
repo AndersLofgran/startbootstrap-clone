@@ -1,0 +1,75 @@
+.Header {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(33,37,41);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+  .HeaderTitle {
+    color: rgb(254,209,54);
+  }
+
+.Menu {
+  background-color: rgb(254,209,54);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  display: flex;
+}
+  .Menu > img {
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+  }
+
+.Dropdown {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  transition: 2s;
+}
+  .hidden {
+    display: none;
+  }
+  .visible {
+    display: block;
+  }
+  
+  .DropdownItem {
+    background-color: rgb(33,37,41);
+    color: white;
+    padding: 15px 20px;
+  }
+
+.desktop-header {
+  height: 0;
+  visibility: hidden;
+}
+
+.mobile-header {
+  visibility: visible;
+}
+  
+@media (min-width: 768px) {
+  .mobile-header {
+    height: 0;
+    visibility: hidden;
+  }
+  .desktop-header {
+    visibility: visible;
+  }
+
+  .Header {
+    justify-content: space-around;
+  }
+  .HeaderLinks {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+  }
+}
